@@ -7,7 +7,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/ri-ui.umd.js",
   "module": "./dist/ri-ui.es.js",
   "exports": {
@@ -17,7 +19,8 @@
     }
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
