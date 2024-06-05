@@ -1,10 +1,11 @@
   import MyButton from './components/MyButton.vue'
   import MyHeader from './components/MyHeader.vue'
-  
-  export { MyButton, MyHeader } 
+  import MyCarousel from './components/MyCarousel.vue'
+
+  export { MyButton, MyHeader, MyCarousel } 
 
   const Components = [
-    MyButton, MyHeader
+    MyButton, MyHeader, MyCarousel
   ]
   const install = function (App) {
   Components.forEach(component => {
