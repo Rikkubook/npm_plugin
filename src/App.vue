@@ -24,8 +24,4 @@ import MyCarousel from './components/MyCarousel.vue'
 </template>
 
 <style scoped>
-.my-button {
-  background-color: #646cffaa;
-  color: #fff;
-}
 </style>

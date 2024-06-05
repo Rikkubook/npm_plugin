@@ -2,7 +2,7 @@
   <a v-if="type==='a'" :href="link" class="my-button">
     <slot></slot>
   </a>
-  <button v-else @click="fun()">
+  <button v-else @click="fun()" class="my-button">
     <slot></slot>
   </button>
 </template>
@@ -31,7 +31,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.lv-button {
+.my-button {
   background-color: #766ea5;
   color: #fff;
   outline: none;

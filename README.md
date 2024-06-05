@@ -8,6 +8,21 @@
 1. 進入 dist
 2. `npm init -y`
 3. 配置打包的plugins訊息
+```json
+{
+  "name": "rikku-plugin",
+  "version": "0.0.4",
+  "description": "",
+  "main": "ri-ui.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["RiUI"],
+  "author": "",
+  "license": "ISC"
+}
+
+```
 4. npm adduser (確定登入 npm 帳號)
 5. npm publish
 6. [rikku-plugin](https://www.npmjs.com/package/rikku-plugin)
