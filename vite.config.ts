@@ -6,9 +6,9 @@ import path from 'path'
 export default defineConfig({
   build: {
     lib:{
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: "lv-button",
-      fileName: (format) => `test-btn.${format}.js`
+      entry: path.resolve(__dirname, 'src/index.js'),
+      name: "RiUI",
+      fileName: (format) => `ri-ui.${format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

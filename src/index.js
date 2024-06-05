@@ -1,10 +1,12 @@
-  import MyeButton from './components/MyeButton.vue'
+  import MyButton from './components/MyButton.vue'
   import MyHeader from './components/MyHeader.vue'
   
+  export { MyButton, MyHeader } 
+
   const Components = [
-  MyeButton, MyHeader
+    MyButton, MyHeader
   ]
-  const install = function (App: any) {
+  const install = function (App) {
   Components.forEach(component => {
     App.component(component.name, component)
   })

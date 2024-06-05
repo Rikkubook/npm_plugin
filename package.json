@@ -1,21 +1,19 @@
 {
-  "name": "my-vue-plugin",
-  "version": "0.0.0",
+  "name": "rikku-plugin",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/test-btn.umd.js",
-  "module": "./dist/test-btn.es.js",
+  "files": ["dist"],
+  "main": "./dist/ri-ui.umd.js",
+  "module": "./dist/ri-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/test-btn.es.js",
-      "require": "./dist/test-btn.umd.js"
+      "import": "./dist/ri-ui.es.js",
+      "require": "./dist/ri-ui.umd.js"
     }
   },
   "dependencies": {
