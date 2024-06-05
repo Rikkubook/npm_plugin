@@ -1,14 +1,4 @@
-# Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
-
-製作 vue3+vite 元件
+# 製作 vue3+vite 元件
 1. 製作元件
 2. 設定主輸出檔案
 3. 設定 package.json 編譯檔
@@ -21,3 +11,45 @@ This template should help get you started developing with Vue 3 and TypeScript i
 4. npm adduser (確定登入 npm 帳號)
 5. npm publish
 6. [rikku-plugin](https://www.npmjs.com/package/rikku-plugin)
+
+# 使用
+## vite
+1. main.js
+
+```js
+import { createApp } from 'vue'
+import './style.css'
+import TestBtnUI from 'test-btn-ui'
+import RikkuUI from 'rikku-plugin'
+import App from './App.vue'
+
+createApp(App).use(TestBtnUI).use(RikkuUI).mount('#app')
+```
+2. App.vue
+```js
+  <MyButton>rikkuboon</MyButton>
+  <MyHeader>
+    <template #title >text</template>
+  </MyHeader>
+```
+
+## nuxt
+1. plugins/rikku-ui.js
+```js
+import { defineNuxtPlugin } from '#app'
+import RikkuUI from 'rikku-plugin'
+
+export default defineNuxtPlugin(nuxtApp => {
+  nuxtApp.vueApp.use(RikkuUI)
+})
+```
+
+2. nuxt.config.ts
+```js
+export default defineNuxtConfig({
+  plugins: [
+    '~/plugins/rikku-ui.js'
+  ]
+})
+
+```
