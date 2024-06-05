@@ -16,6 +16,8 @@ import MyCarousel from './components/MyCarousel.vue'
   </div> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <MyButton>Button</MyButton>
+  <hr>
+  <MyButton :type="'a'">A</MyButton>
   <MyHeader>
     <template #title> Title</template>
     <template #author> Author</template>

@@ -19,7 +19,7 @@ const props = defineProps({
   },
   fun: {
     type: Function,
-    required: ()=>({}),
+    default: ()=>({}),
   },
   link: {
     type: String,
@@ -36,5 +36,7 @@ const props = defineProps({
   color: #fff;
   outline: none;
   border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 </style>
